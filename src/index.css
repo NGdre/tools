@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+:root {
+  --primary: #fafafa;
+  --secondary: hsl(0, 0%, 16%);
+  --accent-hue: 200;
+  --accent-saturation: 90%;
+  --accent: hsl(var(--accent-hue), var(--accent-saturation), 46%);
+  --accent-hover: hsl(var(--accent-hue), var(--accent-saturation), 43%);
+  --accent-active: hsl(var(--accent-hue), var(--accent-saturation), 38%);
+  --accent-pale: hsl(var(--accent-hue), 20%, 56%);
+  --gradient: linear-gradient(
+    135deg,
+    var(--accent),
+    hsl(var(--accent-hue), var(--accent-saturation), 81%)
+  );
+
+  --font-size: 16px;
+  --icon-size: 20px;
+  --b-radius: 5px;
+  --lg-gap: 40px;
+  --md-gap: 25px;
+  --sm-gap: 10px;
+  --xs-gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    font-size: 9px;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  height: 100vh;
+  margin: auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.more {
+  color: var(--accent);
+  text-transform: uppercase;
+  display: block;
+  margin-top: var(--sm-gap);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+header {
+  background: var(--secondary);
+}
+
+.nav-container {
+  height: 70px;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.nav-link {
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 2rem;
+  color: var(--primary);
+  padding: 8px 18px;
+  margin: 2px var(--sm-gap);
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background: var(--accent-pale);
+}
+
+.nav-link.active {
+  background: var(--accent);
+}
+
+.gallery {
+  margin-top: 2rem;
+}
+
+.gallery h2 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: var(--md-gap);
+  color: var(--secondary);
+}
+
+.product-props {
+  margin-top: var(--md-gap);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product-props td {
+  padding: 0.8rem 1rem;
+  font-weight: 300;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.product-props td:nth-of-type(even) {
+  background: red;
+  font-weight: 600;
+  padding: 0;
+}

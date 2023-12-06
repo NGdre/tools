@@ -1,0 +1,25 @@
+#search-form {
+  display: flex;
+  align-items: center;
+  background: var(--primary);
+  border-radius: var(--b-radius);
+  height: 2rem;
+}
+
+#search-form input {
+  outline: none;
+  border: none;
+  padding: 5px 35px 5px 0;
+  background: transparent;
+}
+
+#search-form input::placeholder {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#search-form img {
+  width: var(--icon-size);
+  margin: 0 10px;
+  opacity: 0.5;
+}

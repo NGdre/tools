@@ -1,0 +1,78 @@
+.select-box {
+  appearance: none;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+}
+
+.select-box:focus {
+  outline: none;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  border-radius: var(--b-radius);
+  background: var(--primary);
+  cursor: pointer;
+}
+
+.select-container img {
+  width: 25px;
+  height: 25px;
+  filter: invert(46%) sepia(98%) saturate(1591%) hue-rotate(160deg)
+    brightness(100%) contrast(90%);
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--md-gap);
+}
+
+.input-box span {
+  font-weight: 500;
+}
+
+.input-box input {
+  padding: 5px 20px;
+  width: 70%;
+  margin-top: var(--xs-gap);
+  border: 2px solid #ccc;
+  color: var(--secondary);
+  outline: none;
+  border-radius: var(--b-radius);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: var(--accent);
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.add-product-form-btn {
+  background: var(--gradient);
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  margin-top: var(--lg-gap);
+  padding: 7px 40px;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+}
+
+.add-product-form-btn:hover {
+  background: var(--accent-hover);
+}
+
+.add-product-form-btn:hover {
+  background: var(--accent-active);
+}

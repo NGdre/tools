@@ -1,0 +1,38 @@
+.add-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--accent);
+  color: var(--primary);
+  border: none;
+  padding: 0;
+  border-radius: var(--b-radius);
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.add-image:hover {
+  background: var(--accent-hover);
+}
+
+.add-image:active {
+  background: var(--accent-active);
+}
+
+.add-image .icon-box {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+}
+
+.add-image-text {
+  padding: 0 20px;
+}
+
+.add-image img {
+  width: var(--icon-size);
+
+  filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(311deg)
+    brightness(110%) contrast(100%);
+}
